@@ -1,0 +1,582 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/*배경*/
+
+.background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url('img/메인img.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45); 
+    z-index: 1;
+}
+
+
+
+/*폰트*/
+
+@font-face {
+    font-family: 'JalpullineunHaru';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Jalpullineun/JalpullineunHaru.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Jalpullineun/JalpullineunHaru.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Jalpullineun/JalpullineunHaru.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Jalpullineun/JalpullineunHaru.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Jalpullineun/JalpullineunHaru.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "AppleSDGothicNeoB00";
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot");
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.svg#AppleSDGothicNeoB00")format("svg");
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeo";
+    src: url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.eot");
+    src: url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/af573d25034c111598327fb4d8c11a5a.svg#AppleSDGothicNeo")format("svg");
+}
+
+@font-face {
+    font-family: 'TheJamsil';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/TheJamsil/TheJamsil-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/TheJamsil/TheJamsil-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/TheJamsil/TheJamsil-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/TheJamsil/TheJamsil-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/TheJamsil/TheJamsil-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+
+
+/*로고*/
+
+.main_logo {
+    width: 214px;
+    height: 94px; 
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 1; 
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+
+
+/*문구와 설치유도*/
+
+.content h1 {
+    font-family: 'JalpullineunHaru', sans-serif; 
+    font-size: 5vw;
+    line-height: 140%;
+    font-size: 80px;
+    white-space: pre-line;
+    text-align: left;
+    z-index: 1;
+}
+
+.box1 {
+    width: 217px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #35C5F0;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    margin-right: 20px; 
+}
+
+.apple-icon {
+    font-size: 35px;
+    position: absolute;
+    top: 363px;
+    left: 55px;
+    z-index: 1;
+}
+
+.text-on-box1 {
+    font-family: 'AppleSDGothicNeoB00', sans-serif;
+    font-size: 14pt;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    z-index: 1;
+}
+
+.box1:hover {
+    background-color: #2498E3; 
+    cursor: pointer; 
+}
+
+
+
+.box2 {
+    width: 217px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #35C5F0;
+    position: absolute;
+    top: 350px;
+    left: 247px; 
+    text-align: center; 
+    line-height: 64px;
+}
+
+.google-play-icon {
+    font-size: 30px;
+    position: absolute;
+    top: 367px;
+    left: 290px;
+    z-index: 1;
+}
+
+.text-on-box2 {
+    font-family: 'AppleSDGothicNeoB00', sans-serif;
+    font-size: 14pt;
+    color: white;
+    position: absolute;
+    top: 34px;
+    left: 125px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.box2:hover {
+    background-color: #2498E3; 
+    cursor: pointer; 
+}
+
+
+
+.box1,.box2 {
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+
+
+/*SNS 아이콘*/
+
+.youtube-icon {
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: -165px; 
+    right: -300px; 
+}
+
+.instagram-icon {
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: -165px; 
+    right: -400px; 
+}
+
+.facebook-icon {
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: -165px; 
+    right: -490px; 
+}
+
+.kakaostory {
+    width: 154px;
+    height: 74px; 
+    position: absolute;
+    top: -178px; 
+    right: -653px; 
+    z-index: 1; 
+}
+
+.kakaostory img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*스크롤 유도*/
+
+.scroll-icon {
+    position: absolute;
+    left: 700px;
+    bottom: -250px;
+    font-size: 45px;
+    transform: rotate(-90deg);
+    animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% { bottom: -230px; } 
+    50% { bottom: -200px; }
+    100% { bottom: -230px; } 
+}
+
+
+
+/*----------------------page 1----------------------*/
+
+/*배경*/
+
+.logo {
+        width: 214px;
+        height: 94px; 
+        position: absolute;
+        top: -120px;
+        left: 260px;
+        z-index: 1; 
+    }
+
+
+
+.background2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 970px;
+    left: 0;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+
+/*문구*/
+
+.content2 {
+    position: absolute;
+    top: 1150px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+
+.content2 h2 {
+    font-family: 'TheJamsil', sans-serif; 
+    font-size: 5vw;
+    line-height: 140%;
+    font-size: 60px;
+    white-space: pre-line;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 1170px;
+    z-index: 1;
+}
+
+
+.content2 p {
+    font-family: 'AppleSDGothicNeo', sans-serif; 
+    font-size: 18px;
+    line-height: 90%;
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 1175px;
+    margin-top: -25px;
+    z-index: 1;
+}
+
+
+.styling{
+    width: 470px;
+    height: 470px; 
+    position: absolute;
+    top: 1240px;
+    left: 17%;
+    z-index: 1; 
+}
+
+
+
+/*다운로드&top 버튼*/
+
+.appdown {
+    width: 169px;
+    height: 59px;
+    position: absolute;
+    top: -110px;
+    right: 0px;
+    border-radius: 40px; 
+    background-color: #35C5F0; 
+    z-index: 1; 
+    font-family: 'AppleSDGothicNeoB00', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.appdown:hover {
+    background-color: #2498E3; 
+    cursor: pointer; 
+}
+
+.appdown a {
+    text-decoration: none; 
+    color: white;
+}
+
+.top-button {
+    width: 63px;
+    height: 63px;
+    position: fixed;
+    bottom: 100px;
+    right: 320px;
+    border-radius: 60px;
+    background-color: #D5D5D5;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'AppleSDGothicNeoB00', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.top-button i {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.content3 {
+    position: absolute;
+    top: 2100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+
+.content3 h2 {
+    font-family: 'TheJamsil', sans-serif; 
+    font-size: 5vw;
+    line-height: 140%;
+    font-size: 60px;
+    white-space: pre-line;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 270px;
+    z-index: 1;
+}
+
+
+
+/*----------------------page 2----------------------*/
+
+/*배경*/
+
+.background3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1940px;
+    left: 0;
+    background-color:#F9F9F9;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+
+.content3 p {
+    font-family: 'AppleSDGothicNeo', sans-serif; 
+    font-size: 18px;
+    line-height: 90%;
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 275px;
+    margin-top: -25px;
+    z-index: 1;
+}
+
+.logo2{
+    width: 214px;
+    height: 94px; 
+    position: absolute;
+    top: -120px;
+    left: 260px;
+    z-index: 1; 
+}
+
+
+
+/*사진*/
+
+.delivery_background{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 140px;
+    left: 800px;
+    z-index: 1; 
+}
+
+.engineer{
+    width: 850px;
+    height: 600px;
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    z-index: 1; 
+}
+
+.delivery_car{
+    width: 850px;
+    height: 600px;
+    position: absolute;
+    top: 250px;
+    left: 850px;
+    z-index: 1; 
+}
+
+/*다운로드&top 버튼*/
+
+.appdown2 {
+    width: 169px;
+    height: 59px;
+    position: absolute;
+    top: -100px;
+    right: -900px; 
+    border-radius: 40px; 
+    background-color: #35C5F0; 
+    z-index: 1; 
+    font-family: 'AppleSDGothicNeoB00', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.appdown2:hover {
+    background-color: #2498E3; 
+    cursor: pointer; 
+}
+
+.appdown2 a {
+    text-decoration: none; 
+    color: white;
+}
+
+
+
+/*----------------------page 3----------------------*/
+
+/*배경*/
+
+.background4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2910px;
+    left: 0;
+    background-color:#ffffff;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.content4 {
+    position: absolute;
+    top: 3100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+
+.content4 h2 {
+    font-family: 'TheJamsil', sans-serif; 
+    font-size: 5vw;
+    line-height: 140%;
+    font-size: 60px;
+    white-space: pre-line;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 1170px;
+    z-index: 1;
+}
+
+
+.content4 p {
+    font-family: 'AppleSDGothicNeo', sans-serif; 
+    font-size: 18px;
+    line-height: 90%;
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 1175px;
+    margin-top: -25px;
+    z-index: 1;
+}
+
+.move{
+    width: 1800px;
+    height: 1400px; 
+    position: absolute;
+    top: 2700px;
+    left: -400px;
+    z-index: 1; 
+    display: block;
+}
